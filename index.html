@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayra — Creative Designer & Front-End Developer</title>
+  <meta name="description" content="Portfolio of Mayra — Creative Designer & Front-End Developer crafting aesthetic digital experiences." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div class="loader" id="loader">
+    <div class="loader-text">Mayra<span>.</span></div>
+    <div class="loader-bar"><span></span></div>
+  </div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Mayra<span>.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="nav-right">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+
+    <div class="hero-inner">
+      <div class="hero-left reveal">
+        <p class="kicker">✦ Hello, I'm</p>
+        <h1 class="hero-title">Mayra<span class="dot">.</span></h1>
+        <h2 class="hero-subtitle">Creative Designer & Front-End Developer</h2>
+        <p class="hero-desc">I create aesthetic digital experiences that blend creativity, technology, and storytelling.</p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+        <div class="socials">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="#" aria-label="Behance"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+
+      <div class="hero-right reveal">
+        <div class="portrait-wrap">
+          <div class="portrait-glow"></div>
+          <img src="https://images.unsplash.com/photo-1542740348-39501cd6e2b4?w=700&q=80" alt="Mayra portrait" class="portrait" />
+          <div class="float-card card-1">
+            <i class="fa-solid fa-palette"></i>
+            <div><strong>UI/UX</strong><span>Design</span></div>
+          </div>
+          <div class="float-card card-2">
+            <i class="fa-solid fa-code"></i>
+            <div><strong>Front-End</strong><span>Developer</span></div>
+          </div>
+          <div class="float-card card-3">
+            <i class="fa-solid fa-star"></i>
+            <div><strong>5+ Years</strong><span>Experience</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container about-grid">
+      <div class="about-img reveal">
+        <img src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=700&q=80" alt="About Mayra"/>
+        <div class="badge"><i class="fa-solid fa-sparkles"></i> Creative Soul</div>
+      </div>
+      <div class="about-text reveal">
+        <p class="section-kicker">About Me</p>
+        <h2 class="section-title">Designing Stories,<br/>Building Experiences.</h2>
+        <p class="lead">I am Mayra, a passionate UI/UX Designer and Developer who loves creating beautiful, user-friendly digital products. My work focuses on clean design, modern interactions, and meaningful experiences.</p>
+        <div class="stats">
+          <div class="stat"><h3 class="counter" data-target="5">0</h3><p>Years Experience</p></div>
+          <div class="stat"><h3 class="counter" data-target="80">0</h3><p>Projects Completed</p></div>
+          <div class="stat"><h3 class="counter" data-target="45">0</h3><p>Happy Clients</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="section services">
+    <div class="container">
+      <p class="section-kicker center">What I Do</p>
+      <h2 class="section-title center">Services</h2>
+      <div class="services-grid">
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+          <h3>UI/UX Design</h3>
+          <p>Creating intuitive and beautiful interfaces that users genuinely love to use.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+          <h3>Branding</h3>
+          <p>Visual identity and brand systems that tell powerful, lasting stories.</p>
+        </div>
+        <div class="service-card reveal">
+          <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+          <h3>Front-End Development</h3>
+          <p>Modern responsive websites using HTML, CSS, JavaScript, and React.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects">
+    <div class="container">
+      <p class="section-kicker center">Featured Work</p>
+      <h2 class="section-title center">Selected Projects</h2>
+      <div class="masonry">
+        <div class="project reveal">
+          <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?w=600&q=80" alt="Fashion Store"/>
+          <div class="project-overlay">
+            <span>Web Design</span>
+            <h3>Fashion Store</h3>
+            <a href="#" class="btn btn-ghost btn-sm">View Project</a>
+          </div>
+        </div>
+        <div class="project tall reveal">
+          <img src="https://images.unsplash.com/photo-1522335789203-aaa2f6c4f7d8?w=600&q=80" alt="Beauty Brand"/>
+          <div class="project-overlay">
+            <span>Branding</span>
+            <h3>Beauty Brand</h3>
+            <a href="#" class="btn btn-ghost btn-sm">View Project</a>
+          </div>
+        </div>
+        <div class="project reveal">
+          <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=600&q=80" alt="Café Website"/>
+          <div class="project-overlay">
+            <span>Web Design</span>
+            <h3>Café Website</h3>
+            <a href="#" class="btn btn-ghost btn-sm">View Project</a>
+          </div>
+        </div>
+        <div class="project reveal">
+          <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?w=600&q=80" alt="Portfolio Design"/>
+          <div class="project-overlay">
+            <span>UI/UX</span>
+            <h3>Portfolio Design</h3>
+            <a href="#" class="btn btn-ghost btn-sm">View Project</a>
+          </div>
+        </div>
+        <div class="project tall reveal">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?w=600&q=80" alt="Travel Landing"/>
+          <div class="project-overlay">
+            <span>Landing Page</span>
+            <h3>Travel Landing Page</h3>
+            <a href="#" class="btn btn-ghost btn-sm">View Project</a>
+          </div>
+        </div>
+        <div class="project reveal">
+          <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=600&q=80" alt="E-Commerce"/>
+          <div class="project-overlay">
+            <span>Mobile App</span>
+            <h3>E-Commerce App</h3>
+            <a href="#" class="btn btn-ghost btn-sm">View Project</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <div class="container">
+      <p class="section-kicker center">My Toolkit</p>
+      <h2 class="section-title center">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill reveal"><div class="skill-head"><span>HTML</span><span>95%</span></div><div class="bar"><div class="fill" data-fill="95"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>CSS</span><span>92%</span></div><div class="bar"><div class="fill" data-fill="92"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>JavaScript</span><span>88%</span></div><div class="bar"><div class="fill" data-fill="88"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>React</span><span>85%</span></div><div class="bar"><div class="fill" data-fill="85"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>Figma</span><span>94%</span></div><div class="bar"><div class="fill" data-fill="94"></div></div></div>
+        <div class="skill reveal"><div class="skill-head"><span>UI Design</span><span>96%</span></div><div class="bar"><div class="fill" data-fill="96"></div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section experience">
+    <div class="container">
+      <p class="section-kicker center">My Journey</p>
+      <h2 class="section-title center">Experience</h2>
+      <div class="timeline">
+        <div class="t-item reveal">
+          <div class="t-node"></div>
+          <div class="t-card">
+            <span class="t-date">2019 — 2020</span>
+            <h3>Junior Designer</h3>
+            <p>Started my journey designing brand assets and learning the craft of digital design.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-node"></div>
+          <div class="t-card">
+            <span class="t-date">2020 — 2022</span>
+            <h3>UI/UX Designer</h3>
+            <p>Designed user-friendly interfaces for SaaS products and mobile apps.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-node"></div>
+          <div class="t-card">
+            <span class="t-date">2022 — 2024</span>
+            <h3>Front-End Developer</h3>
+            <p>Built modern, responsive interfaces with React, focusing on motion and polish.</p>
+          </div>
+        </div>
+        <div class="t-item reveal">
+          <div class="t-node"></div>
+          <div class="t-card">
+            <span class="t-date">2024 — Present</span>
+            <h3>Freelance Creative Designer</h3>
+            <p>Partnering with global brands to craft luxury digital experiences.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section testimonials">
+    <div class="container">
+      <p class="section-kicker center">Kind Words</p>
+      <h2 class="section-title center">Testimonials</h2>
+      <div class="testi-track" id="testiTrack">
+        <div class="testi-card">
+          <img src="https://i.pravatar.cc/100?img=47" alt=""/>
+          <p>"Mayra transformed our brand with elegant design and pixel-perfect code. Truly magical work."</p>
+          <h4>Sophia Lane</h4><span>Founder, Lumen Co.</span>
+        </div>
+        <div class="testi-card">
+          <img src="https://i.pravatar.cc/100?img=32" alt=""/>
+          <p>"Her aesthetic sense and attention to detail are unmatched. Our conversions doubled."</p>
+          <h4>Liam Carter</h4><span>CEO, Noir Studio</span>
+        </div>
+        <div class="testi-card">
+          <img src="https://i.pravatar.cc/100?img=15" alt=""/>
+          <p>"A rare blend of designer and developer. Working with Mayra was the highlight of our year."</p>
+          <h4>Aria Patel</h4><span>Product Lead, Bloom</span>
+        </div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="glow glow-3"></div>
+    <div class="container contact-inner">
+      <p class="section-kicker center">Get In Touch</p>
+      <h2 class="section-title center">Let's work together</h2>
+      <form class="contact-form reveal" onsubmit="event.preventDefault(); alert('Thanks! I will get back to you soon ✨');">
+        <div class="row">
+          <input type="text" placeholder="Your Name" required/>
+          <input type="email" placeholder="Your Email" required/>
+        </div>
+        <textarea rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn btn-primary btn-block">Let's Create Something Beautiful</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="logo">Mayra<span>.</span></a>
+        <p class="muted">Crafting aesthetic digital experiences with love.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Follow Me</h4>
+        <div class="socials">
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-behance"></i></a>
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2026 Mayra Portfolio. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
